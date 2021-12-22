@@ -9,12 +9,12 @@ import Header from "./Header";
 export default function Layout({ children = "", fullWidth = false }) {
   const isAuth = useSelector((state) => state?.auth?.isAuth);
 
-  const bodyContent = <Body>{children}</Body>;
-
   return (
     <HtmlContainer>
       <Header isAuth={isAuth} />
-      {Boolean(fullWidth) ? bodyContent : <Container>{bodyContent}</Container>}
+      <Body>
+        {Boolean(fullWidth) ? children : <Container>{children}</Container>}
+      </Body>
       <Footer />
     </HtmlContainer>
   );
