@@ -1,11 +1,26 @@
 import { createTheme } from "@mui/material";
-import { PRIMARY_COLOR } from "./variable";
+import {
+  ERROR_COLOR,
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+  WARNING_COLOR,
+} from "./variable";
 
-export const theme = createTheme({
+export const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
       main: PRIMARY_COLOR,
+    },
+    secondary: {
+      main: SECONDARY_COLOR,
+    },
+
+    warning: {
+      main: WARNING_COLOR,
+    },
+    error: {
+      main: ERROR_COLOR,
     },
   },
   typography: {

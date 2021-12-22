@@ -6,12 +6,12 @@ import "style/index.scss";
 import App from "./App";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import store from './store';
-import { theme } from "./theme";
+import store from "./store";
+import { darkTheme } from "./theme";
 
 ReactDOM.render(
   <Provider store={store}>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <App />
     </ThemeProvider>
   </Provider>,
