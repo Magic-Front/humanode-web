@@ -1,12 +1,12 @@
-import Welcome from "pages/welcome";
+import Home from "pages/home";
 
 const routes = [
-  // Welcome
+  // Home
   {
-    path: `/welcome`,
+    path: `/home`,
     exact: true,
     auth: true,
-    component: Welcome,
+    component: Home,
   },
 ];
 

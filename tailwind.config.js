@@ -44,10 +44,13 @@ module.exports = {
       colors: {
         primary: "#0A86F0",
       },
+      cursor: {
+        crosshair: "crosshair",
+        "zoom-in": "zoom-in",
+      },
     },
-    cursor: {
-      crosshair: "crosshair",
-      "zoom-in": "zoom-in",
+    fontFamily: {
+      body: ["'Futura PT'"],
     },
   },
   variants: {

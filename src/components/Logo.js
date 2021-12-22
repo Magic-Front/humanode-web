@@ -1,19 +1,23 @@
-import { Typography } from '@mui/material'
-import { APP_NAME } from 'lib/global'
-import React from 'react'
+import imageWhite from "assets/img/logo/logo-white.svg";
+import image from "assets/img/logo/logo.svg";
+import { APP_NAME } from "lib/global";
+import React from "react";
+import CustomImage from "./CustomImage";
+import CustomText from "./typography/CustomText";
 
-export default function Logo({ variant = 'text' }) {
+export default function Logo({ variant = "image", color = "primary" }) {
   return (
     <div>
-      {variant === 'text' ? (
-        <Typography variant="h6" component="div">
-          {APP_NAME}
-        </Typography>
+      {variant === "image" ? (
+        <CustomImage
+          src={color === "white" ? imageWhite : image}
+          alt={APP_NAME}
+        />
       ) : (
-        <Typography variant="h6" component="div">
+        <CustomText variant="h3" className="uppercase">
           {APP_NAME}
-        </Typography>
+        </CustomText>
       )}
     </div>
-  )
+  );
 }

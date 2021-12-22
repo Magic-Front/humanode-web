@@ -1,5 +1,5 @@
 {
-  "name": "humanoid",
+  "name": "human-node",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

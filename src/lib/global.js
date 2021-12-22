@@ -1,1 +1,1 @@
-export const APP_NAME = 'Humanoid'
+export const APP_NAME = 'HUMΔNODE'
