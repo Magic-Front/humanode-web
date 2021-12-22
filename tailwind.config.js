@@ -32,8 +32,11 @@ module.exports = {
         120: "30rem",
       },
       backgroundImage: {
-        "girl-center": "url('/src/assets/img/back/back.webp')",
-        "girl-left": "url('/src/assets/img/back/back-left.webp')",
+        "head-top": "url('/src/assets/img/back/head-top.png')",
+        "head-top-sm": "url('/src/assets/img/back/head-top-sm.png')",
+        "head-eye": "url('/src/assets/img/back/head-eye.png')",
+        "head-eye-sm": "url('/src/assets/img/back/head-eye-sm.png')",
+        "head-eye-rect-sm": "url('/src/assets/img/back/head-eye-rect-sm.png')",
       },
       fontSize: {
         xs: [".75rem", "inherit"],

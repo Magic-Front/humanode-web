@@ -1,1 +1,1 @@
-export const APP_NAME = 'Mya'
+export const APP_NAME = 'Humanoid'
