@@ -44,6 +44,7 @@ export const darkTheme = createTheme({
     },
     h4: {
       fontSize: 24,
+      letterSpacing: "0.5em",
     },
     h5: {
       fontSize: 20,

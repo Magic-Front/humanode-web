@@ -6,22 +6,15 @@ import HtmlContainer from "./HtmlContainer";
 import Footer from "./Footer";
 import Header from "./Header";
 
-export default function Layout({
-  children = <></>,
-  fullWidth = false,
-  background = "left",
-}) {
+export default function Layout({ children = "", fullWidth = false }) {
   const isAuth = useSelector((state) => state?.auth?.isAuth);
+
+  const bodyContent = <Body>{children}</Body>;
+
   return (
-    <HtmlContainer background={background}>
+    <HtmlContainer>
       <Header isAuth={isAuth} />
-      {Boolean(fullWidth) ? (
-        <Body>{children}</Body>
-      ) : (
-        <Container>
-          <Body>{children}</Body>
-        </Container>
-      )}
+      {Boolean(fullWidth) ? bodyContent : <Container>{bodyContent}</Container>}
       <Footer />
     </HtmlContainer>
   );
