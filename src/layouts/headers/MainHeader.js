@@ -9,7 +9,7 @@ export default function MainHeader() {
       <Container maxWidth="xl">
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <HeaderButton> About</HeaderButton>
+            <HeaderButton to="/about"> About</HeaderButton>
           </Grid>
           <Grid item>
             <Stack
@@ -22,7 +22,7 @@ export default function MainHeader() {
             </Stack>
           </Grid>
           <Grid item>
-            <HeaderButton> Network</HeaderButton>
+            <HeaderButton to="/network"> Network</HeaderButton>
           </Grid>
         </Grid>
       </Container>

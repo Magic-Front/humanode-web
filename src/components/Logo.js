@@ -3,11 +3,12 @@ import image from "assets/img/logo/logo.svg";
 import { APP_NAME } from "lib/global";
 import React from "react";
 import CustomImage from "./CustomImage";
+import CustomLink from "./CustomLink";
 import CustomText from "./typography/CustomText";
 
 export default function Logo({ variant = "image", color = "primary" }) {
   return (
-    <div>
+    <CustomLink to="/">
       {variant === "image" ? (
         <CustomImage
           src={color === "white" ? imageWhite : image}
@@ -18,6 +19,6 @@ export default function Logo({ variant = "image", color = "primary" }) {
           {APP_NAME}
         </CustomText>
       )}
-    </div>
+    </CustomLink>
   );
 }
