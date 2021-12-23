@@ -5,8 +5,8 @@ import React from "react";
 
 export default function NetworkComponent() {
   return (
-    <Grid container spacing={10} justifyContent="center">
-      <Grid item>
+    <Grid container justifyContent="center">
+      <Grid item className="px-10">
         <Stack spacing={3} alignItems="flex-start">
           <CustomText className="pb-10" color="primary" variant="h4">
             COMMUNITY:
@@ -18,7 +18,7 @@ export default function NetworkComponent() {
           <TextButton size="small">Youtube</TextButton>
         </Stack>
       </Grid>
-      <Grid item>
+      <Grid item className="px-10">
         <Stack spacing={3} alignItems="flex-start">
           <CustomText className="pb-10" color="primary" variant="h4">
             UPDATES:
@@ -27,7 +27,7 @@ export default function NetworkComponent() {
           <TextButton size="small">Forum</TextButton>
         </Stack>
       </Grid>
-      <Grid item>
+      <Grid item className="px-10">
         <Stack spacing={3} alignItems="flex-start">
           <CustomText className="pb-10" color="primary" variant="h4">
             WRITE TO:
