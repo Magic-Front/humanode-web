@@ -14,7 +14,7 @@ export default function HtmlContainer({
       className={`relative bg-${rect} bg-center bg-fixed bg-no-repeat bg-120 sm:bg-185`}
     >
       {showHome && (
-        <Container maxWidth="xl" className="sm-down:hidden">
+        <Container maxWidth="xl" className="sm-max:hidden">
           <Box
             sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
             className="absolute top-1/2"
