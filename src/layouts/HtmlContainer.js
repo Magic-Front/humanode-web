@@ -1,16 +1,38 @@
+import { ArrowBackIos } from "@mui/icons-material";
+import { Box, Container } from "@mui/material";
+import TextButton from "components/buttons/TextButton";
 import React from "react";
 
 export default function HtmlContainer({
   children = "",
   background = "head-top",
+  showHome = false,
 }) {
   const [back, rect] = String(background).split(" ");
   return (
     <div
-      className={`bg-${rect} bg-center bg-fixed bg-no-repeat bg-120 sm:bg-185`}
+      className={`relative bg-${rect} bg-center bg-fixed bg-no-repeat bg-120 sm:bg-185`}
     >
+      {showHome && (
+        <Container maxWidth="xl" className="sm-down:hidden">
+          <Box
+            sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            className="absolute top-1/2"
+          >
+            <TextButton
+              size="small"
+              className="opacity-40"
+              startIcon={<ArrowBackIos />}
+              to="/"
+            >
+              Home
+            </TextButton>
+          </Box>
+        </Container>
+      )}
       <div
         className={`
+          relative
           min-h-screen
           sm:bg-${back} bg-${back}-sm
           bg-cover bg-center bg-fixed
