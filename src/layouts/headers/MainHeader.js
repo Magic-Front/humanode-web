@@ -1,5 +1,5 @@
 import { Container, Grid, Stack } from "@mui/material";
-import HeaderButton from "components/buttons/HeaderButton";
+import TextButton from "components/buttons/TextButton";
 import Logo from "components/Logo";
 import React from "react";
 
@@ -9,7 +9,7 @@ export default function MainHeader() {
       <Container maxWidth="xl">
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
-            <HeaderButton to="/about"> About</HeaderButton>
+            <TextButton to="/about"> About</TextButton>
           </Grid>
           <Grid item>
             <Stack
@@ -22,7 +22,7 @@ export default function MainHeader() {
             </Stack>
           </Grid>
           <Grid item>
-            <HeaderButton to="/network"> Network</HeaderButton>
+            <TextButton to="/network"> Network</TextButton>
           </Grid>
         </Grid>
       </Container>

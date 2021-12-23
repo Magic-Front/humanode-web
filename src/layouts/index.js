@@ -8,7 +8,7 @@ import Header from "./Header";
 
 export default function Layout({
   children = "",
-  fullWidth = false,
+  maxWidth = "md",
   background = "head-top",
 }) {
   const isAuth = useSelector((state) => state?.auth?.isAuth);
@@ -17,7 +17,7 @@ export default function Layout({
     <HtmlContainer background={background}>
       <Header isAuth={isAuth} />
       <Body>
-        {Boolean(fullWidth) ? children : <Container>{children}</Container>}
+        <Container maxWidth={maxWidth}>{children}</Container>
       </Body>
       <Footer />
     </HtmlContainer>

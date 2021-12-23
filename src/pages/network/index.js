@@ -4,7 +4,7 @@ import NetworkComponent from "./NetworkComponent";
 
 export default function Network() {
   return (
-    <Layout background="head-eye">
+    <Layout background="head-eye" maxWidth="xl">
       <NetworkComponent />
     </Layout>
   );

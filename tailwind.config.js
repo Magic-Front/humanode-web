@@ -42,7 +42,8 @@ module.exports = {
         xs: [".75rem", "inherit"],
       },
       colors: {
-        primary: "#0A86F0",
+        yellow: "#F8C16C",
+        red: "#C62A1F",
       },
       cursor: {
         crosshair: "crosshair",

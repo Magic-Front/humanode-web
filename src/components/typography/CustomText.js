@@ -16,9 +16,9 @@ export default function CustomText({
       {...props}
       component={span ? "span" : component}
       align={align}
-      className={`${shadow ? `filter drop-shadow` : ``} text-${
-        props?.color ?? ""
-      } ${className} `}
+      className={`${shadow ? `filter drop-shadow` : ``}
+      text-${props?.color ?? ""}
+      ${className} `}
       fontWeight={bold ? "bold" : ""}
     >
       {children}
