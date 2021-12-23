@@ -8,7 +8,7 @@ export default function MainHeader() {
     <div className="fixed w-screen pt-10">
       <Container maxWidth="xl">
         <Grid container justifyContent="space-between" alignItems="center">
-          <Grid item>
+          <Grid item sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
             <TextButton to="/about">About</TextButton>
           </Grid>
           <Grid item className="absolute left-0 w-full">
@@ -21,7 +21,7 @@ export default function MainHeader() {
               <Logo variant="text" />
             </Stack>
           </Grid>
-          <Grid item>
+          <Grid item sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
             <TextButton to="/network">Network</TextButton>
           </Grid>
         </Grid>
