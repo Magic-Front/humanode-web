@@ -1,6 +1,7 @@
 import About from "pages/about";
 import Home from "pages/home";
 import Network from "pages/network";
+import Paper from "pages/paper";
 
 const routes = [
   // Home
@@ -16,6 +17,13 @@ const routes = [
     exact: true,
     auth: false,
     component: Network,
+  },
+  // Paper
+  {
+    path: `/paper`,
+    exact: true,
+    auth: false,
+    component: Paper,
   },
   // About
   {

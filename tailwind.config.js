@@ -30,6 +30,7 @@ module.exports = {
       },
       backgroundSize: {
         120: "30rem",
+        185: "46.25rem",
       },
       backgroundImage: {
         "head-top": "url('/src/assets/img/back/head-top.png')",
@@ -37,6 +38,10 @@ module.exports = {
         "head-eye": "url('/src/assets/img/back/head-eye.png')",
         "head-eye-sm": "url('/src/assets/img/back/head-eye-sm.png')",
         "head-eye-rect-sm": "url('/src/assets/img/back/head-eye-rect-sm.png')",
+
+        "rect-01": "url('/src/assets/img/rects/rect-01.svg')",
+        "rect-02": "url('/src/assets/img/rects/rect-02.svg')",
+        "rect-03": "url('/src/assets/img/rects/rect-03.svg')",
       },
       fontSize: {
         xs: [".75rem", "inherit"],
