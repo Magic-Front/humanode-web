@@ -49,11 +49,14 @@ export default function HtmlContainer({
           transition-all duration-300
         `}
       >
-        <div className="bg-head-top"></div>
-        <div className="bg-head-top-sm"></div>
-        <div className="bg-head-eye"></div>
-        <div className="bg-head-eye-sm"></div>
-        <div className="bg-head-eye-rect-sm"></div>
+        <div className="bg-head-top sm:bg-head-top sm-max:bg-head-top"></div>
+        <div className="bg-head-top-sm sm:bg-head-top-sm sm-max:bg-head-top-sm"></div>
+        <div className="bg-head-eye sm:bg-head-eye sm-max:bg-head-eye"></div>
+        <div className="bg-head-eye-sm sm:bg-head-eye-sm sm-max:bg-head-eye-sm"></div>
+        <div className="bg-head-eye-rect-sm sm:bg-head-eye-rect-sm sm-max:bg-head-eye-rect-sm"></div>
+        <div className="bg-rect-01 sm:bg-rect-01 sm-max:bg-rect-01"></div>
+        <div className="bg-rect-02 sm:bg-rect-02 sm-max:bg-rect-02"></div>
+        <div className="bg-rect-03 sm:bg-rect-03 sm-max:bg-rect-03"></div>
         {children}
       </div>
     </div>
