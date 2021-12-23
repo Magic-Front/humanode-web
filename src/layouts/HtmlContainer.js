@@ -37,6 +37,7 @@ export default function HtmlContainer({
           sm:bg-${back} bg-${back}-sm
           bg-cover bg-center bg-fixed
           flex flex-col items-stretch
+          overflow-x-hidden
           scroll-thumb
           transition-all duration-300
         `}
