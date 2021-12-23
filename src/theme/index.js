@@ -7,6 +7,8 @@ import {
   WHITE_COLOR,
 } from "./variable";
 
+const theme = createTheme();
+
 export const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -37,24 +39,47 @@ export const darkTheme = createTheme({
 
     h2: {
       fontSize: 50,
+      letterSpacing: "0.5em",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 15,
+        letterSpacing: "0.5em",
+      },
     },
     h3: {
       fontSize: 27,
       letterSpacing: "0.5em",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 14,
+        letterSpacing: "0.5em",
+      },
     },
     h4: {
       fontSize: 24,
       letterSpacing: "0.5em",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 13,
+        letterSpacing: "0.5em",
+      },
     },
     h5: {
       fontSize: 20,
       letterSpacing: "0.5em",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 13,
+        letterSpacing: "0.5em",
+      },
     },
     h6: {
       fontSize: 18,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 13,
+      },
     },
     button: {
       fontSize: 16,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 13,
+      },
     },
     body1: {
       fontSize: 14,

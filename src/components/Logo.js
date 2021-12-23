@@ -13,6 +13,7 @@ export default function Logo({ variant = "image", color = "primary" }) {
         <CustomImage
           src={color === "white" ? imageWhite : image}
           alt={APP_NAME}
+          className="sm-max:w-11 sm-max:h-11"
         />
       ) : (
         <CustomText variant="h3" className="uppercase">
