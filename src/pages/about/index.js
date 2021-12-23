@@ -4,7 +4,7 @@ import AboutComponent from "./AboutComponent";
 
 export default function About() {
   return (
-    <Layout background="head-eye" maxWidth="xl" showHome>
+    <Layout background="head-eye rect-03" maxWidth="xl" showHome>
       <AboutComponent />
     </Layout>
   );
