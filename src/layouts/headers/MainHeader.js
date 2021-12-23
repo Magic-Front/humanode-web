@@ -5,13 +5,13 @@ import React from "react";
 
 export default function MainHeader() {
   return (
-    <div className="fixed w-screen py-5">
+    <div className="fixed w-screen pt-10">
       <Container maxWidth="xl">
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item>
             <TextButton to="/about">About</TextButton>
           </Grid>
-          <Grid item>
+          <Grid item className="absolute left-0 w-full">
             <Stack
               justifyContent="space-between"
               alignItems="center"

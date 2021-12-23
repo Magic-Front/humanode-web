@@ -1,6 +1,7 @@
-import { ArrowBackIos } from "@mui/icons-material";
-import { Box, Container } from "@mui/material";
+import { ArrowBackIos, Close } from "@mui/icons-material";
+import { Box, Container, IconButton } from "@mui/material";
 import TextButton from "components/buttons/TextButton";
+import CustomLink from "components/CustomLink";
 import React from "react";
 
 export default function HtmlContainer({
@@ -14,19 +15,25 @@ export default function HtmlContainer({
       className={`relative bg-${rect} bg-center bg-fixed bg-no-repeat bg-120 sm:bg-185`}
     >
       {showHome && (
-        <Container maxWidth="xl" className="sm-max:hidden">
-          <Box
-            sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
-            className="absolute top-1/2"
-          >
-            <TextButton
-              size="small"
-              className="opacity-40"
-              startIcon={<ArrowBackIos />}
-              to="/"
-            >
-              Home
-            </TextButton>
+        <Container maxWidth="xl" className="">
+          <Box sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+            <div className="absolute top-1/2 sm-max:hidden">
+              <TextButton
+                size="small"
+                className="opacity-40"
+                startIcon={<ArrowBackIos />}
+                to="/"
+              >
+                Home
+              </TextButton>
+            </div>
+            <div className="absolute left-0 bottom-12 w-full flex justify-center sm:hidden">
+              <CustomLink to="/">
+                <IconButton size="small">
+                  <Close fontSize="large" />
+                </IconButton>
+              </CustomLink>
+            </div>
           </Box>
         </Container>
       )}
